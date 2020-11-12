@@ -1,4 +1,5 @@
 (library
  (name hex)
  (public_name hex)
- (libraries cstruct bigarray-compat))
+ (libraries cstruct bigarray-compat)
+ (ocamlopt_flags (-S)))
