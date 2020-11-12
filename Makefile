@@ -1,20 +1,4 @@
+.PHONY: add-cap-files
 
-.PHONY: build clean test install uninstall doc
-
-build:
-	dune build
-
-test:
-	dune runtest
-
-install:
-	dune install
-
-uninstall:
-	dune uninstall
-
-doc:
-	dune build @doc
-
-clean:
-	rm -rf _build *.install
+add-cap-files:
+	./choose_compartment_strategy.sh $(COMPARTMENT_STRATEGY_CHOICE)
