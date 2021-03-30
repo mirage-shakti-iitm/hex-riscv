@@ -6,5 +6,5 @@
  (name runtest)
  (deps
   (:< test.exe))
- (action
+ (rule
   (run %{<} -runner sequential)))
