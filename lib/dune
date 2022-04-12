@@ -2,4 +2,4 @@
  (name hex)
  (public_name hex)
  (libraries cstruct bigarray-compat)
- (ocamlopt_flags (-S -function-sections)))
+ (ocamlopt_flags (-default-compartment-id 255 -function-sections)))
