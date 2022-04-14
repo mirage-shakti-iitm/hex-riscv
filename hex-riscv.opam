@@ -13,7 +13,7 @@ depends: [
   "bigarray-compat-riscv" {>= "1.0.0"}
 ]
 build: [
-  (* [ make "add-cap-files"] *)
+  [ make "add-cap-files"]
   ["dune" "subst"] {pinned}
   ["dune" "build" "-x" "riscv" "-p" "hex" "-j" jobs]
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
